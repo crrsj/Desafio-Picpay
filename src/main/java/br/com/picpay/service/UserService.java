@@ -29,7 +29,7 @@ public class UserService {
 		 return this.repository.findUserById(id).orElseThrow(()->new Exception("Usuário não encontrado"));
 		   
 	   }
-     public void sendUser(User user) {
+     public void saveUser(User user) {
     	 repository.save(user);
      }
 }
